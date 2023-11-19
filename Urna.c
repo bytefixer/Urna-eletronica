@@ -10,11 +10,11 @@ int main(){
 	float pc1 = 0, pc2 = 0, pc3 = 0, pc4 = 0, pnulo = 0, pbranco = 0, fimLoop = 0, total = 0;
 	
 	/*Perguntando ao usuario se a quantidade de eleitores sera definida ou nao.*/
-    printf("Digite '1' para definir o número de eleitores ou '2' para o que voto seja dado indefinidamente: ");
+    printf("Digite '1' para definir o nÃºmero de eleitores ou '2' para o que voto seja dado indefinidamente: ");
     
     while(scanf("%d", &insert) != 1) {
     	printf("-------------------\n");
-        printf("Entrada inválida!");
+        printf("Entrada invÃ¡lida!");
         printf("\n-------------------");
 		printf("\nDigite novamente: ");
         while (getchar() != '\n');
@@ -22,8 +22,8 @@ int main(){
 
     /*Caso seja definida pelo numero 1:*/
     if(insert == 1){
-    	/*Nessa parte a gente usa a variavel(numero de eleitores) que foi definida pelo usuario.*/
-        printf("Digite o número de eleitores: ");
+    	/*Nessa parte utilizamos a variavel(numero de eleitores) que foi definida pelo usuario.*/
+        printf("Digite o nÃºmero de eleitores: ");
         scanf("%d", &eleitor);
         
       	    for(insert = 0; insert < eleitor; insert++){
@@ -32,21 +32,20 @@ int main(){
 		    	printf("\n\nCandidato 2 - Charlotte");
 		    	printf("\n\nCandidato 3 - Sophia");
 		    	printf("\n\nCandidato 4 - Siren");
-		    	printf("\n\nOpção 5 - Voto Nulo");
-		    	printf("\n\nOpção 6 - Voto Branco");
+		    	printf("\n\nOpÃ§Ã£o 5 - Voto Nulo");
+		    	printf("\n\nOpÃ§Ã£o 6 - Voto Branco");
 		    	printf("\n\n----------------- OUTRAS OPCOES -----------------------------");
-		    	printf("\n\nOpção 7 - Digite 00 para encerrar a votação e ver a apuração.\n");
-		    	printf("\nOpção 8 - Digite 11 para somente encerrar a votação.\n");
+		    	printf("\n\nOpÃ§Ã£o 7 - Digite 00 para encerrar a votaÃ§Ã£o e ver a apuraÃ§Ã£o.\n");
+		    	printf("\nOpÃ§Ã£o 8 - Digite 11 para somente encerrar a votaÃ§Ã£o.\n");
 		    	
 		    	printf("\n-------------------------------------------------------------");
 		    	printf("\n\nDigite o seu voto: ");
             	scanf("%d",&voto);
             	
-            	/*Switch para evitar-se o uso de inumeros if...else*/
 		        switch(voto){
-		        	/*Ir para apuracao. Aqui temos os possiveis casos(caminhos) que o usuario pode inserir.*/
+		        	/*Ir para apuracao. Aqui temos os possiveis casos que o usuario pode inserir.*/
 		    		case 00:
-		    			printf("\n\n\n******  VOTAÇÃO ENCERRADA. Veja a apuração abaixo!  ******\n");
+		    			printf("\n\n\n******  VOTAÃ‡ÃƒO ENCERRADA. Veja a apuraÃ§Ã£o abaixo!  ******\n");
 		    			printf("\n\n_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_\n\n");
                         fimLoop=1;
 		    			break;
@@ -76,13 +75,13 @@ int main(){
 		    			break;
 		    		case 11:
               printf("\n\n-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_\n\n");
-		    			printf("\nVotação encerrada.\n");
+		    			printf("\nVotaÃ§Ã£o encerrada.\n");
               printf("\n\n_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_");
                         return 0;
 		    			break;
                     default:
                         invalido++;
-		    		    printf("\n\n\n ****** VOTO INVÁLIDO ****** \n\n\n");
+		    		    printf("\n\n\n ****** VOTO INVÃLIDO ****** \n\n\n");
 		    		    break;
 		    	}
 
@@ -100,11 +99,11 @@ int main(){
 		    printf("\n\nCandidato 2 - Charlotte");
 		    printf("\n\nCandidato 3 - Sophia");
 		    printf("\n\nCandidato 4 - Siren");
-		    printf("\n\nOpção 5 - Voto Nulo");
-		    printf("\n\nOpção 6 - Voto Branco");
+		    printf("\n\nOpÃ§Ã£o 5 - Voto Nulo");
+		    printf("\n\nOpÃ§Ã£o 6 - Voto Branco");
 		    printf("\n\n----------------- OUTRAS OPCOES ------------------------------");
-		    printf("\n\nOpção 7 - Digite 00 para encerrar a votação e ver a apuração.\n");
-		    printf("Opção 8 - Digite 11 para somente encerrar a votação.\n");
+		    printf("\n\nOpÃ§Ã£o 7 - Digite 00 para encerrar a votaÃ§Ã£o e ver a apuraÃ§Ã£o.\n");
+		    printf("OpÃ§Ã£o 8 - Digite 11 para somente encerrar a votaÃ§Ã£o.\n");
 		    
 		    printf("\n--------------------------------------------------------------");
     	    printf("\n\nDigite seu voto: ");
@@ -114,7 +113,7 @@ int main(){
 				/*Apuracao. Aqui tem os possiveis casos(votos) que o usuario pode inserir.*/
 		    	case 0:
             printf("\n\n-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_\n");
-		    		printf("\n\n******  Votacao encerrada. Veja abaixo a apuração!  ******");
+		    		printf("\n\n******  Votacao encerrada. Veja abaixo a apuraÃ§Ã£o!  ******");
 		    		printf("\n\n-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_\n");
                     fimLoop=1;
 		    		break;
@@ -144,13 +143,13 @@ int main(){
 		    		break;
 		    	case 11:
 		    		printf("\n\n-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_\n");
-		    		printf("\nVotação encerrada.\n");
+		    		printf("\nVotaÃ§Ã£o encerrada.\n");
 		    		printf("\n-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_\n");
                     return 0;
                     break;
                 default:
 		    		invalido++;
-		    		printf("\n\n\n ****** VOTO INVÁLIDO ****** \n\n\n");
+		    		printf("\n\n\n ****** VOTO INVÃLIDO ****** \n\n\n");
 		    		break;		
 		    }
         
@@ -169,7 +168,7 @@ int main(){
 		
 			/*Aqui sera mostrado ao usuario caso nao seja inserido nenhum voto.*/
 			if(total == 0){
-    			printf("\nNão houve votos.\n");
+    			printf("\nNÃ£o houve votos.\n");
           		printf("\n_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_");
 			} else{	
 				/*Resultado dos votos.*/
