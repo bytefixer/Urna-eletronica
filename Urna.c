@@ -10,7 +10,7 @@ int main(){
 	float pc1 = 0, pc2 = 0, pc3 = 0, pc4 = 0, pnulo = 0, pbranco = 0, fimLoop = 0, total = 0;
 	
 	/*Perguntando ao usuario se a quantidade de eleitores sera definida ou nao.*/
-    printf("Digite '1' para definir o número de eleitores ou '2' para o que voto seja dado indefinidamente: ");
+    printf("Olá! Digite '1' para definir o número de eleitores ou '2' para o que voto seja dado indefinidamente: ");
     
     while(scanf("%d", &insert) != 1) {
     	printf("-------------------\n");
